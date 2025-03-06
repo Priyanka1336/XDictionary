@@ -39,14 +39,13 @@ const Home = () => {
       <button type="button" onClick={handleSearch}>
         Search
       </button>
-
+      <h3>Definition:</h3>
       {definition && (
         <div>
           {definition === "Word not found in the dictionary." ? (
             <p>{definition}</p>
           ) : (
             <>
-              <h3>Definition:</h3>
               <p>{definition}</p>
             </>
           )}
